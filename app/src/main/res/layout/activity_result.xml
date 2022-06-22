@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".dashboard_activities.ResultActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/sky_blue">
+
+        <ImageView
+            android:id="@+id/backPageId"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Academic Result"
+            android:fontFamily="@font/web_semi_bold"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:id="@+id/id_student_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:hint="Student Id"
+            android:fontFamily="@font/web_semi_bold"
+            android:textCursorDrawable="@color/sky_blue"
+            android:backgroundTint="@color/sky_blue"
+            android:inputType="numberDecimal"
+            />
+
+
+
+
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:id="@+id/id_select_semester"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Select Semester"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/web_semi_bold"
+            android:textCursorDrawable="@color/sky_blue"
+            android:backgroundTint="@color/sky_blue"
+
+            >
+
+
+        </com.google.android.material.textfield.MaterialAutoCompleteTextView>
+
+
+    <Button
+        android:id="@+id/id_show_result"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.AppCompat.Light"
+        android:background="@drawable/login_button_shape"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:fontFamily="@font/web_semi_bold"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        >
+
+    </Button>
+</LinearLayout>

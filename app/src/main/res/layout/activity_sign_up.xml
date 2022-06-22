@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Authentication.SignUpActivity">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textSize="40sp"
+        android:textStyle="bold"
+
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/sky_blue"
+        android:gravity="center"
+        >
+
+
+    </TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        app:startIconDrawable="@drawable/ic_baseline_identity_24"
+        android:hint="Student id">
+
+
+        <EditText
+            android:id="@+id/id_signup_std_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:inputType="number"
+            android:fontFamily="@font/web_semi_bold"
+            android:backgroundTint="@color/sky_blue"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:startIconDrawable="@drawable/ic_baseline_identity_24"
+        android:hint="Guardian Name">
+
+        <EditText
+            android:id="@+id/id_signup_guardian_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/web_semi_bold"
+            android:backgroundTint="@color/sky_blue"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:startIconDrawable="@drawable/ic_baseline_email_24"
+        android:hint="Email Address">
+
+        <EditText
+            android:id="@+id/id_signup_guardian_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/web_semi_bold"
+            android:inputType="textEmailAddress"
+            android:backgroundTint="@color/sky_blue"
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:startIconDrawable="@drawable/ic_baseline_local_phone_24"
+        android:hint="Phone number">
+
+        <EditText
+            android:id="@+id/id_signup_guardian_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/web_semi_bold"
+            android:inputType="number"
+            android:backgroundTint="@color/sky_blue"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/ic_baseline_lock_open_24"
+        app:endIconMode="password_toggle"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Password"
+        >
+
+        <EditText
+            android:id="@+id/id_signup_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:inputType="textPassword"
+            android:fontFamily="@font/web_semi_bold"
+            android:backgroundTint="@color/sky_blue"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/id_btn_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Sign up"
+        android:fontFamily="@font/web_semi_bold"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/login_button_shape"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/forgot"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:text="Already have an account?"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:fontFamily="@font/web_semi_bold"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/id_sign_in_page"
+            android:text="sign in"
+            android:fontFamily="@font/web_semi_bold"
+            android:textColor="@color/sky_blue"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/id_progressbar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:visibility="gone"
+        />
+
+</LinearLayout>
+    </androidx.core.widget.NestedScrollView>

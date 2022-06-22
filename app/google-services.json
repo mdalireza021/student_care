@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "602682299587",
+    "project_id": "studentcare-1e3ff",
+    "storage_bucket": "studentcare-1e3ff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602682299587:android:5c7d524051cff2a5b2be76",
+        "android_client_info": {
+          "package_name": "com.srsofttech.studentcare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "602682299587-v349rluaukgtb6mdk9ef4591n74ufq41.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDK0kC81XCKZN7H58csm4cXx06-7lrBYaY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "602682299587-v349rluaukgtb6mdk9ef4591n74ufq41.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

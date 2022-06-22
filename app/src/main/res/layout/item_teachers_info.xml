@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/profile">
+
+
+
+        </ImageView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="35dp"
+                android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Name:"
+                android:fontFamily="@font/web_semi_bold"
+                android:textColor="@color/violate"
+                android:layout_gravity="right"
+                >
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Designation:"
+                android:fontFamily="@font/web_semi_bold"
+                android:textColor="@color/violate"
+                android:layout_gravity="right"
+                android:textSize="16sp"
+                >
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Teaching Area:"
+                android:fontFamily="@font/web_semi_bold"
+                android:textColor="@color/violate"
+                android:layout_gravity="right"
+                android:textSize="16sp"
+                >
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email:"
+                android:fontFamily="@font/web_semi_bold"
+                android:textColor="@color/violate"
+                android:layout_gravity="right"
+                android:textSize="16sp"
+                >
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone :"
+                android:fontFamily="@font/web_semi_bold"
+                android:textColor="@color/violate"
+                android:layout_gravity="right"
+                android:textSize="16sp"
+                >
+
+            </TextView>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="-25dp"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:id="@+id/id_teachers_info_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Abdul Aziz Sarkar"
+                    android:fontFamily="@font/web_semi_bold"
+                    android:textColor="@color/violate"
+                    android:textSize="16sp"
+                    >
+                </TextView>
+                <TextView
+                    android:id="@+id/id_teachers_info_designation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Head Teacher"
+                    android:fontFamily="@font/web_semi_bold"
+                    android:textColor="@color/violate"
+                    android:textSize="16sp"
+                    >
+                </TextView>
+                <TextView
+                    android:id="@+id/id_teachers_info_teaching_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bangla"
+                    android:fontFamily="@font/web_semi_bold"
+                    android:textColor="@color/violate"
+                    android:textSize="16sp"
+                    >
+                </TextView>
+                <TextView
+                    android:id="@+id/id_teachers_info_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="aziz123@gmail.com"
+                    android:fontFamily="@font/web_semi_bold"
+                    android:textColor="@color/violate"
+                    android:textSize="16sp"
+                    >
+                </TextView>
+                <TextView
+                    android:id="@+id/id_teachers_info_phone"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/web_semi_bold"
+                    android:layout_height="wrap_content"
+                    android:text="01772711529"
+                    android:textColor="@color/violate"
+                    android:textSize="16sp"
+                    >
+
+                </TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

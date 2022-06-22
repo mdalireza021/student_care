@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".dashboard_activities.PaymentActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/sky_blue">
+
+        <ImageView
+            android:id="@+id/backPageId"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back_arrow"
+            android:layout_margin="15dp"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Payment"
+            android:fontFamily="@font/web_semi_bold"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingRight="50dp"
+            android:paddingLeft="50dp">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/graduate"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" Tuition Fee"
+                    android:fontFamily="@font/web_semi_bold"
+                    android:textColor="#000"
+                    android:buttonTint="@color/sky_blue"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" Session Fee"
+                    android:fontFamily="@font/web_semi_bold"
+                    android:textColor="#000"
+                    android:textSize="16sp"
+                    android:buttonTint="@color/sky_blue"
+                    android:textStyle="bold"/>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" Transport Fee"
+                    android:textColor="#000"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/web_semi_bold"
+                    android:buttonTint="@color/sky_blue"
+                    android:textStyle="bold"/>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" Others"
+                    android:textColor="#000"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/web_semi_bold"
+                    android:buttonTint="@color/sky_blue"
+                    android:textStyle="bold"/>
+
+            </RadioGroup>
+
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/id_payment_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/web_semi_bold"
+                android:hint="Enter Amount"
+                android:backgroundTint="@color/sky_blue"
+                android:textCursorDrawable="@color/sky_blue"
+                android:inputType="number"
+                android:padding="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19sp"
+                    android:fontFamily="@font/web_semi_bold"
+                    android:layout_marginLeft="20dp"
+                    android:text="Service Charge: ">
+
+                </TextView>
+                <TextView
+                    android:id="@+id/id_payment_service_charge"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/web_semi_bold"
+                    android:layout_height="wrap_content"
+                    android:textSize="19sp"
+                    android:text="0">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19sp"
+                    android:fontFamily="@font/web_semi_bold"
+                    android:layout_marginLeft="20dp"
+                    android:textStyle="bold"
+                    android:text="Total Amount: ">
+
+                </TextView>
+                <TextView
+                    android:id="@+id/id_payment_total_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19sp"
+                    android:fontFamily="@font/web_semi_bold"
+                    android:text="0">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Continue"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/web_semi_bold"
+                android:background="@drawable/round_button"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
